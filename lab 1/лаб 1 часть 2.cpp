@@ -6,7 +6,7 @@
 #include <iomanip> // Для выставления количества знаков после запятой
 #include <windows.h> // Для русских букв в консоли
 
-using namespace std; // Не писать std::
+using namespace std; // Чтобы не писать std::
 
 struct Discipline {
     // Задаём структуру дисциплина по условию
