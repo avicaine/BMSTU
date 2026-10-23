@@ -27,6 +27,8 @@
 
 <div align="center">
 
+<img src="assets/gerb.svg" width="170" alt="МГТУ им. Н.Э. Баумана">
+
 Москва, МГТУ им. Н.Э. Баумана — 2026
 
 </div>
