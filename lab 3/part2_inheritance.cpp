@@ -7,6 +7,7 @@
 //     в базовом классе, вызываемая функция выбирается по типу объекта.
 #include <iostream>
 #include <vector>
+#include <windows.h> // Импортируем библиотеку windows для работы с кодировкой консоли
 using namespace std;
 
 // ---------- 1. Статический полиморфизм ----------
@@ -76,6 +77,9 @@ public:
 
 int main()
 {
+    SetConsoleOutputCP(65001); // Устанавливаем UTF-8 для вывода русских букв в консоли
+    SetConsoleCP(65001);       // Устанавливаем UTF-8 для ввода
+
     cout << "1. Static polymorphism (no virtual)" << endl;
     vec2 a(3, 4);           // Объект базового класса
     vec3 b(1, 2, 3);        // Объект производного класса

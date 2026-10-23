@@ -6,12 +6,16 @@
 #include <fstream>
 #include <vector>
 #include <utility> // std::move
+#include <windows.h> // Импортируем библиотеку windows для работы с кодировкой консоли
 #include "vector.h"
 
 using namespace std;
 
 int main()
 {
+    SetConsoleOutputCP(65001); // Устанавливаем UTF-8 для вывода русских букв в консоли
+    SetConsoleCP(65001);       // Устанавливаем UTF-8 для ввода
+
     ifstream fin("input.txt");   // Входной файл
     ofstream fout("output.txt"); // Выходной файл
     if (!fin || !fout)
