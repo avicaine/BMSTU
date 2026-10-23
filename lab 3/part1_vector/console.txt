@@ -1,0 +1,20 @@
+Vector()
+Vector()
+Vector(const double *arr, int size)
+Vector(int n)
+Vector(int n)
+Vector(const Vector & V) n=4
+Vector(Vector&& V)
+Vector()
+Vector & operator =(const Vector& v2)
+Vector()
+Vector & operator =(Vector&& v2)
+~Vector() n=4
+~Vector() n=4
+~Vector() n=4
+~Vector() n=4
+~Vector() n=3
+~Vector() n=0
+~Vector() n=3
+~Vector() n=0
+~Vector() n=0
