@@ -4,7 +4,3 @@ lab3_part2
 *.exe
 *.o
 *.out
-
-# CLion
-.idea/
-cmake-build-*/
