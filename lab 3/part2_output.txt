@@ -1,0 +1,15 @@
+1. Static polymorphism (no virtual)
+a.print():   x=3 y=4
+b.print():   x=1 y=2 z=3
+p->print():  x=3 y=4
+p->print():  x=1 y=2  <- z is not printed: function chosen by pointer type
+
+2. Dynamic polymorphism (virtual)
+pv->print(): x=3 y=4
+pv->print(): x=1 y=2 z=3  <- z is printed: function chosen by object type
+
+3. Vector of pointers to objects of base and derived classes
+1) x=3 y=4
+2) x=1 y=2 z=3
+3) x=-5 y=12
+4) x=2 y=-1 z=0.5
